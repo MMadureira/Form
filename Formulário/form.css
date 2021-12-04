@@ -1,18 +1,19 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(to right, rgb(46, 44, 44), rgb(190, 175, 175));
+    font-family: 'Open Sans', sans-serif;
 }
 
 .box{
     color: white;
     position: absolute;
-    top: 50%;
+    top: 50vh;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
     padding: 15px;
     border-radius: 15px;
-    width: 28%;
+    width: 400px;
 }
 
 fieldset{
@@ -46,7 +47,11 @@ legend{
     top: 0%;
     left: 0%;
     pointer-events: none;
-    transition: .5s;
+    transition: .2s;
+}
+
+*:focus{
+    outline: none;
 }
 
 .inputUser:focus ~ .labelInput,
@@ -76,4 +81,5 @@ legend{
 
 #submit:hover{
     background-image: linear-gradient(to right, rgb(85, 83, 83), rgb(248, 246, 246));
+    transition: 0.2s;
 }
